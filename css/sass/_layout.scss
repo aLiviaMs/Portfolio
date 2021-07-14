@@ -122,6 +122,22 @@
     justify-content: flex-start;
     align-items: center;
 }
+@media screen and (max-width: 960px) {
+    .about-item {
+        text-align: left;
+
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    } 
+
+    .about {
+        img {
+            margin-right: 500px;
+        }
+    }
+}
 
 .list-item {
     max-width: 1200px;
@@ -163,7 +179,6 @@
 
 .get {
     max-width: 1200px;
-    height: 70vh;
 
     margin: 0 auto;
     padding: 16px 24px;

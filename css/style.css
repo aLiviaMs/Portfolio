@@ -18,6 +18,10 @@ a {
   text-decoration: none;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 .link {
   padding: 8px 24px;
   font-size: 24px;
@@ -1042,6 +1046,26 @@ body {
           align-items: center;
 }
 
+@media screen and (max-width: 960px) {
+  .about-item {
+    text-align: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .about img {
+    margin-right: 500px;
+  }
+}
+
 .list-item {
   max-width: 1200px;
   margin: 0 auto;
@@ -1084,7 +1108,6 @@ body {
 
 .get {
   max-width: 1200px;
-  height: 70vh;
   margin: 0 auto;
   padding: 16px 24px;
 }
